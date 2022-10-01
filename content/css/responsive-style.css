@@ -1,0 +1,43 @@
+@media (min-width: 576px) {
+    nav {
+        display: block;
+    }
+
+    .navburger-menu {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    nav {
+        display: none;
+    }
+
+    .navburger-menu {
+        display: block;
+    }
+
+    .info-box h1 {
+        font-size: 4rem;
+    }
+
+    .info-box img {
+        width: 75%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        display: none;
+    }
+
+    .navburger-menu {
+        display: block;
+    }
+
+}

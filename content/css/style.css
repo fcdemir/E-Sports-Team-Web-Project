@@ -1,0 +1,472 @@
+
+/*-- STABLE VALUES --*/
+
+.bgred {
+    background-color: red;
+}
+
+.bgblue {
+    background-color: blue;
+}
+
+.bgdarkred {
+    background-color: darkred;
+}
+
+html {
+    background-color: rgb(20, 20, 20);
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+main {
+    background-color: rgb(20, 20, 20);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'K2D', sans-serif;
+}
+
+a, p {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+/* NAVIGATOR */
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    display: block;
+    transition: 1s;
+    padding: 2% 0;
+}
+
+nav img {
+    transition: 1s;
+}
+
+nav img:hover {
+    transform: rotate(-5deg);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: 1rem;
+    transition: 1s;
+}
+
+nav a:hover {
+    color: black;
+    font-weight: 500;
+}
+
+nav li {
+    text-decoration: none;
+    display: inline;
+    padding: 0 2%;
+    transition: 1s;
+    line-height: 2rem;
+    letter-spacing: 2px;
+}
+
+
+nav li:hover {
+    letter-spacing: 3px;
+    background-color: darkred;
+    padding: 10px;
+}
+
+
+/* MOBILE NAVIGATION NAVBURGER */
+
+.navburger {
+    display: none;
+}
+
+.navburger-menu {
+    display: none;
+}
+
+.navburger li {
+    padding: 5% 0%;
+    padding-left: 5%;
+    margin: 2% 0;
+    background-color: rgb(116, 0, 0);
+    list-style: none;
+}
+
+.navburger a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.navburger-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 5% 0;
+}
+
+.navburger-opened {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: darkred;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+}
+
+/* NAVBURGER ICON ANIMATION */
+
+.hamburger .line{
+    width: 50px;
+    height: 5px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+    cursor: pointer;
+}
+
+#hamburger-1.is-active .line:nth-child(2){
+    opacity: 0;
+}
+  
+#hamburger-1.is-active .line:nth-child(1){
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg);
+}
+  
+#hamburger-1.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+/* HEADER */
+
+
+.header-main {
+    background-color: rgb(20, 20, 20);
+    height: 100vh;
+    padding-top: 10%;
+}
+
+.header-logo {
+    transform: rotate(-5deg);
+    transition: 1s;
+}
+
+.header-logo:hover {
+    transform: rotate(0deg);
+}
+
+.header-main h3 {
+    letter-spacing: 15px;
+}
+
+
+/*-- CONTAINER MAIN BODY --*/
+
+
+.info-box h1 {
+    font-size: 5.5rem;
+    transition: 750ms;
+    animation-name: info-box-h1;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+@keyframes info-box-h1 {
+    0%   {padding-left: 0%; letter-spacing: 0px;}
+    50% {padding-left: 5%; letter-spacing: 3px;}
+    100% {padding-left: 0%; letter-spacing: 0px;}
+}
+
+
+
+.info-box img {
+    width: 100%;
+    position: relative;
+    animation-name: info-box-hero-img;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes info-box-hero-img {
+    0%   {right:0%;}
+    50% {right: 5%;}
+    100% {right:0%;}
+}
+
+.info-box-left img {
+    width: 10%;
+}
+
+.info-box-bottom a {
+    text-decoration: none;
+    transition: 1s;
+}
+
+.info-box-bottom img:hover {
+    cursor: pointer;
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+/*-- FOOTER --*/
+
+footer {
+    background-color: rgb(20, 20, 20);
+}
+
+footer li {
+    line-height: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+
+footer a:hover {
+    color: red;
+}
+
+footer h5 {
+    font-weight: bolder;
+    color: white;
+}
+
+
+/*----WHO----*/
+/*----WHO----*/
+
+.header-other {
+    background-color: rgb(20, 20, 20);
+}
+
+header h1 {
+    position: static;
+    padding-top: 20%;
+    padding-bottom: 5%;
+}
+
+/*----TEAM----*/
+/*----TEAM----*/
+
+.player-image {
+    width: 100%;
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.player-info {
+    background-color: rgba(0, 0, 0, 0.500);
+}
+
+.csgo-player1 {
+    background-image: url('../img/cs-player.png');
+}
+
+.csgo-player2 {
+    background-image: url('../img/cs-player.png');
+}
+
+.csgo-player3 {
+    background-image: url('../img/cs-player.png');
+}
+
+.csgo-player4 {
+    background-image: url('../img/cs-player.png');
+}
+
+.csgo-player5 {
+    background-image: url('../img/cs-player.png');
+}
+
+.valo-player1 {
+    background-image: url('../img/valo-player.png');
+}
+
+.valo-player2 {
+    background-image: url('../img/valo-player.png');
+}
+
+.valo-player3 {
+    background-image: url('../img/valo-player.png');
+}
+
+.valo-player4 {
+    background-image: url('../img/valo-player.png');
+}
+
+.valo-player5 {
+    background-image: url('../img/valo-player.png');
+}
+
+/*----SHOP----*/
+/*----SHOP----*/
+
+.soon {
+    padding: 25% 0;
+}
+
+/*----CONTACT----*/
+/*----CONTACT----*/
+
+.form input[type='text'], input[type='email'] {
+    padding: 3% 0;
+    margin: .5% 0;
+    border-style: none;
+    outline: none;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.form input[type='text']::placeholder, input[type='email']::placeholder {
+    color: grey;
+}
+
+.form textarea {
+    padding: 3% 0;
+    margin: .5% 0;
+    resize: none;
+    border-style: none;
+    outline: none;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.form textarea::placeholder {
+    text-align: center;
+}
+
+.form button {
+    padding: 3% 0;
+    margin: .5% 0;
+    border-style: none;
+    background-color: darkred;
+    color: white;
+    transition: 1s;
+}
+
+.form button:hover {
+    background-color: darkgreen;
+    letter-spacing: .1rem;
+}
+
+.contact-social img {
+    width: 10%;
+    margin: 1%;
+}
+
+.contact-social a {
+    text-decoration: none;
+    color: white;
+
+}
+
+/*----CAREER.HTML----*/
+/*----CAREER.HTML----*/
+
+
+.career {
+    background-image: url('../img/career_back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.637);
+}
+
+.career button {
+    padding: 2% 3%;
+    background-color: darkred;
+    color: white;
+    transition: 1s;
+    border-style: none;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.404);
+}
+
+.career button:hover {
+    background-color: darkgreen;
+
+}
+
+/*----OPEN ROLES.HTML----*/
+/*----OPEN ROLES.HTML----*/
+
+.openroles-csgo {
+    background-image: url('../img/openroles_csgo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.openroles-valo {
+    background-image: url('../img/openroles_valorant.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/*----CONSTRUCTION.HTML----*/
+/*----CONSTRUCTION.HTML----*/
+/*----CONSTRUCTION.HTML----*/
+/*----CONSTRUCTION.HTML----*/
+
+.container_construction {
+    padding: 20% 0;
+    text-align: center;
+}
+
+.container_construction h1 {
+    font-size: 5rem;
+    color: white;
+    line-height: 0;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+    transition: 500ms;
+}
+
+.container_construction h1:hover {
+    letter-spacing: 10px;
+}
